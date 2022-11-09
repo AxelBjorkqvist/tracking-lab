@@ -7,7 +7,7 @@ const buttons = document.querySelectorAll("button");
       //Lägg in och fyll datalagret vid checkout
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
-       'click': 'order'
+       'event': 'order'
        });
       window.location =
         "thankyou.html?product=" +
