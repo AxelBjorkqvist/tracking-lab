@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Valtech Food / Martin - Tack för beställningen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Lägg till Google Tag Manager script här-->
+  </head>
+
+  <body>
+    <!-- Lägg till Google Tag Manager (noscript) här! -->
+    <section>
+      <div class="container">
+        <h1>Tack för din beställning!</h1>
+
+        <div class="center">
+          <a href="index.html"> « Tillbaka</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script>
+      const urlParam = new URLSearchParams(window.location.search);
+
+      const product = urlParam.get("product");
+      const price = urlParam.get("price");
+
+      console.log(product, price);
+
+      const radio = urlParam.get("radio");
+      const feedbackMsg = urlParam.get("feedback-comment");
+
+      console.log(radio, feedbackMsg);
+
+      //Lägg in och fyll datalagret vid färdig transaktion
+    </script>
+  </body>
+</html>

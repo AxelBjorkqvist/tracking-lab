@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Valtech Food / Martin - Beställning</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Lägg till Google Tag Manager script här-->
+  </head>
+
+  <body>
+    <!-- Lägg till Google Tag Manager (noscript) här! -->
+    
+    <section>
+      <div class="container">
+        <h1>Matbeställning</h1>
+        <ul class="products">
+          <li>
+            <div class="product">
+              <div class="img">🍕</div>
+              <button id="pizza" class="button" data-product="pizza" data-price="89">
+                Beställ
+              </button>
+            </div>
+          </li>
+          <li class="product">
+            <div>
+              <div class="img">🍔</div>
+              <button id="hamburger" class="button" data-product="hamburger" data-price="129">
+                Beställ
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <form class="container" id="feedback-form" action="thankyou.html">
+        <h1>Feedback</h1>
+
+        <p>Hur upplevde du maten?</p>
+        <div class="feedback-scale">
+          <input type="radio" name="radio" id="super-sad" value="super-sad">
+          <label class="radio-label" for="super-sad">
+            <i class="lar la-sad-tear"></i>
+          </label>
+          <input type="radio" name="radio" id="sad" value="sad">
+          <label class="radio-label" for="sad">
+            <i class="las la-frown"></i>
+          </label>
+          <input type="radio" name="radio" id="neutral" value="neutral">
+          <label class="radio-label" for="neutral">
+            <i class="lar la-meh"></i>
+          </label>
+          <input type="radio" name="radio" id="happy" value="happy">
+          <label class="radio-label" for="happy">
+            <i class="lar la-smile"></i>
+          </label>
+          <input type="radio" checked="checked" name="radio" id="super-happy" value="super-happy">
+          <label class="radio-label" for="super-happy">
+            <i class="lar la-grin"></i>
+          </label>
+        </div>
+
+        <div class="feedback-msg">
+          <p>Övriga kommentarer</p>
+          <textarea name="feedback-comment"></textarea>
+        </div>
+        <button class="button" type="submit" form="feedback-form" value="Submit">Skicka in</button>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
