@@ -7,9 +7,10 @@ const buttons = document.querySelectorAll("button");
       //Lägg in och fyll datalagret vid checkout
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
-       'event': 'order',
-       'product_ordered': button.getAttribute("data-product")
-       });
+        event: "order_food",
+        formLocation: "footer",
+      });
+
       window.location =
         "thankyou.html?product=" +
         button.getAttribute("data-product") +
