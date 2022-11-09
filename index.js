@@ -8,7 +8,7 @@ const buttons = document.querySelectorAll("button");
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: "order_food",
-        formLocation: "footer",
+        formLocation: button.getAttribute("data-product"),
       });
 
       window.location =
