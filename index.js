@@ -8,7 +8,7 @@ const buttons = document.querySelectorAll("button");
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
        'event': 'order',
-       'product_ordered': button.getAttribute()
+       'product_ordered': button.getAttribute("data-product")
        });
       window.location =
         "thankyou.html?product=" +
