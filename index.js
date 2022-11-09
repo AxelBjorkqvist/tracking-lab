@@ -5,7 +5,10 @@ const buttons = document.querySelectorAll("button");
     "click",
     function () {
       //Lägg in och fyll datalagret vid checkout
-
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+       'click': 'order'
+       });
       window.location =
         "thankyou.html?product=" +
         button.getAttribute("data-product") +
